@@ -11,17 +11,17 @@ var MAP = {
 };
 
 function normalize(lang) {
-    if(!lang) { return null; }
+    // if(!lang) { return null; }
 
     var lower = lang.toLowerCase();
     return MAP[lower] || lower;
 }
 
 function highlight(lang, code) {
-    if(!lang) return {
-        body: code,
-        html: false
-    };
+    // if(!lang) return {
+    //     body: code,
+    //     html: false
+    // };
 
     // Normalize lang
     lang = normalize(lang);
